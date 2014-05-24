@@ -1,0 +1,570 @@
+﻿/**
+ * Type       cui 控件
+ * @file      cui.css
+ * @author:   byzuo 
+ * @update:   2014-02-12
+ * 
+ */
+@charset "utf-8";
+.cui-mask{background:rgba(0,0,0,.2); z-index:2000;}
+.cui-warning-mask{background:#f5f5f5;}
+.cui-layer{ position:fixed; left:50%; top:50%; z-index:2100;border-radius:10px; padding:5px;}
+
+.cui-alert{ position:fixed; left:50%; top:50%; padding:1px;}
+.cui-alert-padding{ padding:0 0 10px; background:#fff;overflow:hidden;}
+.cui-alert-title{ font-size:14px; height:40px; line-height:40px;background:#0073C3; text-indent:10px;}
+.cui-alert-content{ padding:10px 0px; }
+.cui-alert-buttons{ text-align:center;}
+
+.cui-originselect{ position:absolute; background:#fff; border:1px solid #ccc; border-bottom:0px;}
+.cui-originselect .cui-option{ height:30px; line-height:30px; padding:0px 10px; border-bottom:1px solid #ccc; }
+.cui-originselect .cui-option-selected{ background:#aaa; }
+.cui-select-fullscreen{ border:0px; text-align:center;}
+.cui-view.cui-originselect.cui-select-fullscreen{z-index:10000!important;/*加了z-index:10000 解决机票编辑登机人，选择证件头头部被另外一个层的头部z-index:9999遮住bug*/ }
+.cui-select-fullscreen .cui-select-title{ height: 30px; line-height:30px; border-bottom:1px solid #efefef; }
+
+/* --------------------------
+   oldcalenar modify by pp 20131010
+   -------------------------- */
+.cui-calendar{/*position:relative!important;*/ background:#f3f3f3;}
+.clahead{display:none;}
+.calmonth{ width:100%; margin-bottom:20px; font-family:Verdana; font-size:12px;}
+.calmonth .clatitle th{font:normal 16px/2 "";background:#fff;}
+.calmonth .clarow{ background:#fff;}
+.clarow td{height:45px; padding:4px 0; text-align:center; overflow:hidden;background-color:#f3f3f3;}
+.clarow td.valid{background-color:#fff;}
+.valid i, .invalid i{display: block;font-weight: normal;font-size: 12px;}
+.calmonth .clarow td.selected{ background:#06a2d0; color:#fff; }
+.calmonth_nocurrent{color:#fff; background:#fff;}
+
+/* --------------------------
+   cui-img slide 主要应用于国内酒店、团购酒店图片展示
+   -------------------------- */
+.cui-slide{ width:100%; height:100%; position:relative;}
+.cui-slide-imgsouter{ width:100%; height:100%; overflow:hidden; position:relative; }
+.cui-slide-imgsinter{ height:100%; position:absolute; left:0px; top:0px;  }
+.cui-slide-img-item{ height:100%; overflow:hidden; float:left; display:table; background:#e4e4e4;}
+.cui-slide-img-item a{display:table-cell; vertical-align:middle;}
+.cui-slide-img-item img{ width:100%; }
+.cui-slide-nav{ height:20px; position:absolute; bottom:0px; left:0px; width:100%; text-align:center;}
+.cui-slide-nav-item{ overflow:hidden; width:16px; height:4px; background:#000; float:left; margin:0px 5px; border-radius:2px; opacity:0.6;}
+.cui-slide-nav-padding{ display:inline-block; overflow:hidden; height:100%; }
+body .cui-slide-nav-item-current{ background:#fff; }
+.cui-slide-nav-item{   }
+.cui-slide-img-item-empey{ background:#ccc; position:relative; background:#f5f5f5 url(http://res.m.ctrip.com/html5/content/images/roomPic.png) no-repeat center center; }
+.cui-slide-img-item-empey:after{ position:absolute; content:''; width:100%; text-align:center; top:45%; }
+
+
+.cui-toast .cui-layer-padding{width:220px;line-height:24px;border-radius:5px;background:rgba(0,0,0,.7);padding:10px 15px;color:#fff;font-weight:700;text-align:center;word-break:break-all;}
+
+/* --------------------------
+   Mask default css
+   -------------------------- */
+.cui-Mask{ display:none; background:rgba(0,0,0,.5);}
+
+
+/* --------------------------
+   Alert defalut css
+   -------------------------- */
+.cui-alert{ max-width:500px; width:95%;}
+.cui-close{ display:none; font-family:Arial; height:1.2em; line-height:1.2em; width:1.2em; font-size:14px; overflow:hidden; border-radius:1em; text-align:center; background:#ccc; cursor:pointer; right:-0.5em; top:-0.5em; }
+.cui-alert-title{ text-align:center;  height:3em; line-height:3em; background:#0073C3; color:#fff;}
+.cui-alert-content{ margin:0px 20px; padding:25px 0px; font-weight:bold; line-height:150%; /*text-align:left;*/ text-align:center; }
+.cui-alert-button-box{ text-align:center; padding-bottom:15px; }
+.cui-alert-button{ height:44px; line-height:44px; border:0px; background:#31A9E9; width:40%; color:#fff; font-weight:bold; font-size:18px; margin:0px 0.5em; display:inline-block;-webkit-appearance: none;border-radius:0px;}
+.cui-alert-button:hover{ background:#005C9C; }
+.cui-alert-tbg{ background:#000; opacity:0.5;border-radius:4px; display:none; }
+.cui-alert-conbox{ margin:10px; background:#fff; position:relative;  overflow:hidden;}
+
+.cui-layer{color:#eee; border-radius:10px; }
+
+
+/* --------------------------
+   旧头部 CSS 
+   -------------------------- */
+.head-warning-top{ width:100%; }
+.head-warning-header{ height:48px; background:#1491c5; position:relative; }
+.head-warning-header .returnico:active{opacity:.7;}
+.head-warning-header-title{ text-align:center; font: 600 1.286em/2.75 "STXihei";color:#fff;}
+.head-warning-content-icon{ text-align:center;}
+.head-warning-content-title{text-align:center;font-size:12px;}
+
+
+.main-frame{ min-width:240px; height:100%;}
+.main-viewport{ position:relative; height:100%; }
+.sub-viewport{ position:relative;  overflow-x:hidden; min-height:100%;}
+
+/* --------------------------
+   动画  向右关闭和进入
+   -------------------------- */
+@-webkit-keyframes sliderightout {
+    from{
+        -webkit-transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        -webkit-transform:translateX(50%);
+        opacity:0;
+    }
+}
+@-webkit-keyframes slideleftin {
+    from{
+        -webkit-transform:translateX(-50%);
+        opacity:0;
+    }
+    to{
+        -webkit-transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes slideleftout {
+    from{
+        -webkit-transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        -webkit-transform:translateX(-50%);
+        opacity:0;
+    }
+}
+@-webkit-keyframes sliderightin {
+    from{
+        -webkit-transform:translateX(50%);
+        opacity:0;
+    }
+    to{
+        -webkit-transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+/* firefox */
+@-moz-keyframes sliderightout {
+    from{
+        -moz-transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        -moz-transform:translateX(50%);
+        opacity:0;
+    }
+}
+@-moz-keyframes slideleftin {
+    from{
+        -moz-transform:translateX(-50%);
+        opacity:0;
+    }
+    to{
+        -moz-transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+@-moz-keyframes slideleftout {
+    from{
+        -moz-transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        -moz-transform:translateX(-50%);
+        opacity:0;
+    }
+}
+@-moz-keyframes sliderightin {
+    from{
+        -moz-transform:translateX(50%);
+        opacity:0;
+    }
+    to{
+        -moz-transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+/*keyframes*/
+@keyframes sliderightout {
+    from{
+        transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        transform:translateX(50%);
+        opacity:0;
+    }
+}
+@keyframes slideleftin {
+    from{
+        transform:translateX(-50%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideleftout {
+    from{
+        transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        transform:translateX(-50%);
+        opacity:0;
+    }
+}
+@keyframes sliderightin {
+    from{
+         transform:translateX(50%);
+        opacity:0;
+    }
+    to{
+        -webkit-transform:translateX(0px);
+        opacity:1;
+    }
+}
+
+.slideleftout {
+    -webkit-animation:slideleftout 350ms ease-in-out;
+    -moz-animation:slideleftout 350ms ease-in-out;
+    animation:slideleftout 350ms ease-in-out;
+}
+.slideleftin {
+    -webkit-animation:slideleftin 350ms ease-in-out;
+    -moz-animation:slideleftin 350ms ease-in-out;
+    animation:slideleftin 350ms ease-in-out;
+}
+
+.sliderightout {
+    -webkit-animation:sliderightout 350ms ease-in-out;
+    -moz-animation:sliderightout 350ms ease-in-out;
+    animation:sliderightout 350ms ease-in-out;
+}
+.sliderightin {
+    -webkit-animation:sliderightin 350ms ease-in-out;
+    -moz-animation:sliderightin 350ms ease-in-out;
+    animation:sliderightin 350ms ease-in-out;
+}
+
+.animatestart{
+    position:absolute;
+	top:0;
+	left:0;
+	z-index:9999;
+	width:100%;
+	height: 100%; 
+	overflow-x:hidden;
+}
+
+.animatestart.sub-viewport {
+  overflow-x:hidden;
+  -webkit-backface-visibility: hidden;
+  background-color:#f5f5f5;
+}
+
+/* --------------------------
+   默认select样式
+   -------------------------- */
+.cui-select-title-box{ height:48px; line-height:48px; overflow:hidden; background:#1491c5; position:relative; }
+.cui-select-fullscreen .cui-select-title-box .cui-select-title{ height:48px; line-height:48px; font-size:18px; font-weight:bold; color:#fff;}
+.cui-select-title-box .cui-select-title-leftback{ height:100%; width:68px; position:absolute; left:0px; top:0px; z-index:1;background-color: #15a4d5;}
+.cui-select-title-box .cui-select-title-leftback:active{opacity:0.7;}
+.cui-originselect-fixed-title { width:100%; text-align:right;}
+
+
+/* --------------------------
+   input 报错背景色
+   -------------------------- */
+.cui-input-error{background:#fffaeb;}
+
+
+/* --------------------------
+   输入框历史记录
+   -------------------------- */
+.cui-history{ background:#fff;  } 
+.cui-history .cui-history-border{border:1px solid #ccc;}
+.cui-history .cui-history-list li{ height:40px; line-height:40px; padding:0px 10px;}
+.cui-history .cui-history-list li.item{ border-bottom:1px solid #efefef;} 
+
+
+/* --------------------------
+   input 右则清空输入框 by pp
+   -------------------------- */
+.clear-input{display:none; position:absolute; z-index:10; top:0px!important; right:0!important; width:30px; height:100%; }
+.clear-input span{position:absolute; width:16px; height:16px; border-radius:30px; top:50%!important; left:50%; margin:-8px 0 0 -8px; background:#b1b1b1;}
+.clear-input span:before,.clear-input span:after{position:absolute; content:""; top:4px; left:7px; width:2px; height:8px; background:#fff;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg); }
+.clear-input span:before{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
+.clear-input-box{ position:relative; }
+
+
+/* --------------------------
+   日历 by pp
+   -------------------------- */
+.cui_cldwrap{padding-top:25px; color:#585858;}
+.cui_cldwrap_h{padding-top:40px; }
+.cui_cldmsg{padding:0 10px; line-height:15px;}
+.cui_cldweek{position:fixed;z-index:2;top:48px;left:0; width:100%; height:auto; overflow:hidden;font:normal 12px/24px "verdana"; border-bottom:1px solid #c8c8c8; background:#f7f7f7;}
+.cui_cldweek_top0{top:0;}
+.cui_cldweek li{float:left; width:14%; text-align:center;}
+.cui_cldweek li:first-child,.cui_cldweek li:last-child{width:15%; color:#ff902d;}
+.cui_cldmonth{height:40px;text-align:center;font:normal 16px/50px "verdana"; background:#fff;}
+.cui_cldunit{margin-bottom:14px;}
+.cui_cld_daybox{overflow:hidden; background:#fff;}
+.cui_cld_daybox li{float:left; width:14%; height:40px; padding:4px 0; font:normal 14px/45px "verdana"; overflow:hidden; text-align:center;}
+.cui_cld_daybox li:nth-child(7n),.cui_cld_daybox li:nth-child(7n+1){width:15%; color:#ff902d;}
+.cui_cld_dayfuture{background:#fff;}
+.cui_cld_day_nocrtmonth{ visibility:hidden;}
+.cui_cld_day_havetxt em,.cui_cld_nopro em,.cui_cld_haspro em,.cui_cld_daycrt em{display:block; line-height:20px; font-size:12px;}
+.cui_cld_day_havetxt i,.cui_cld_nopro i,.cui_cld_haspro i,.cui_cld_daycrt i{display:block;line-height:15px; font-size:11px;/*-webkit-transform:scale(0.8333);min-width: calc(100% + 10px);min-width:-moz-calc(100% + 10px);min-width:calc(100% + 10px);margin-left: -4px;减小字体大小为10px方案*/}
+.cui_cld_daycrt.cui_cld_daycrt_sl em{line-height:inherit; }
+.cui_spandate{line-height:22px;display:block;}
+.cui_cld_daybox li.cui_cld_day_hint{color:#06a2d0;}
+.cui_cld_daybox li.cui_cld_daypass{color:#cfcfcf!important;}
+.cui_cld_daycrt{ background:#06a2d0; color:#fff!important;}
+
+
+.cui-full-views{position:fixed;width:100%;height:100%;background:rgba(0,0,0,.35);top:0;left:0;}
+.cui-pop-box{background:#fff;width:280px;margin:auto;position:relative;z-index:9999;}
+.cui-text-center{text-align:center;}
+.cui-grayc{color:#878787;}
+
+/* --------------------------
+   控件弹出框标题部份
+   -------------------------- */
+.cui-pop-box .cui-hd{height:40px;line-height:40px;font-size:1.2em;color:#fff;background:#1491c5;padding:0 10px;position:relative;}
+
+
+/* --------------------------
+   费用说明Box
+   -------------------------- */
+.cui-pop-box .cui-hd .label{position:absolute;width:50px;height:100%;right:0;top:0;}
+.cui-pop-box .cui-hd .cui-top-close{width:18px; height:18px;float:right;margin:10px 12px 0 0;line-height:18px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background:#fff;color:#1491c5;text-align:center;font-weight:bold;text-indent:-9999px;position:relative;}
+.cui-pop-box .cui-hd .cui-top-close:before,.cui-pop-box .cui-hd .cui-top-close:after{width:2px;height:10px;position:absolute;left:50%;top:50%;margin:-5px 0 0 -1px;background:#1491c5;content:"";}
+.cui-pop-box .cui-hd .cui-top-close:before{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
+.cui-pop-box .cui-hd .cui-top-close:after{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);}
+
+
+/* --------------------------
+   控件 c.ui.scroll.radio.list
+   -------------------------- */
+.cui-select-view li{border-bottom:#dfdfdf 1px solid;padding:1em 2em 1em 1em;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;position:relative;}
+.cui-select-view li.current{color:#1084bc;}
+.cui-select-view li:active{background:rgba(0,0,0,.05);}
+.cui-select-view li.current:before,.cui-select-view li.current:after{position:absolute;content:"";background:#1084bc;height:3px;top:50%;border-radius:3px;}
+.cui-select-view li.current:before{width:18px;right:10px;margin-top:-2px;-webkit-transform:rotate(-50deg);-moz-transform:rotate(-50deg);-ms-transform:rotate(-50deg);transform:rotate(-50deg);}
+.cui-select-view li.current:after{width:9px;right:22px;margin-top:2px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
+
+
+/* --------------------------
+   控件 c.ui.scroll.radio flexbox 布局
+   -------------------------- */
+.cui-bd{color:#000;}
+.cui-roller,.cui-roller-btns{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;;}
+.cui-roller-bd,.cui-roller-btns .cui-flexbd{-webkit-box-flex: 1;-moz-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;}
+.cui-roller{width:100%;overflow:hidden;position:relative;}
+.cui-flex2{-webkit-box-flex:2.5;-moz-box-flex:2.5;-webkit-flex:2.5;-ms-flex:2.5;flex:2.5;}
+.cui-roller .ul-list{height:100%;text-align:center;font-size:1.2em;z-index:2;}
+.cui-roller .ul-list li.current{font-size:1.3255em;}
+.cui-roller .ul-list li{height:44px;line-height:44px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+
+/* --------------------------
+   scroll.radio 遮住层
+   -------------------------- */
+.cui-mask-gray{position:absolute;z-index:3;top: 0;left: 0;width: 100%;height: 100%;pointer-events: none;
+    background: linear-gradient(#fff 0,rgba(245,245,245,0) 52%,rgba(245,245,245,0) 48%,#fff 100%);
+    background: -webkit-gradient(linear,left bottom,left top,from(#fff),color-stop(0.52,rgba(245,245,245,0)),color-stop(0.48,rgba(245,245,245,0)),to(#fff));
+    background: -webkit-linear-gradient(#fff 0,rgba(245,245,245,0) 52%,rgba(245,245,245,0) 48%,#fff 100%);
+    background: -moz-linear-gradient(#fff 0,rgba(245,245,245,0) 52%,rgba(245,245,245,0) 48%,#fff 100%);
+}
+
+
+/* --------------------------
+   scroll.radio 中间线条
+   -------------------------- */
+.cui-lines{width:100%;height:44px;position:absolute;top:50%;left:0;margin-top:-23px;border-top:#dfdfdf 1px solid;border-bottom:#dfdfdf 1px solid;}
+.cui-h-font,.cui-m-font{font-size:.67em;}
+.cui-roller-tips{color:#8d8d8d;padding:5px;text-align:center;}
+.cui-error-tips{color:#000;padding:20px;text-align:center;}
+
+
+/* --------------------------
+   scroll.radio 灰色和橙色按钮
+   -------------------------- */
+.cui-roller-btns{background:#f6f5f5;padding:10px 15px; line-height:18px; text-align:center;}
+.cui-roller-btns .cui-flexbd{padding:10px 0;color:#fff;}
+.cui-roller-btns .cui-flexbd:active{opacity:.75;}
+.cui-roller-btns .cui-flexbd:nth-of-type(2){margin-left:20px;}
+.cui-roller-btns .cui-btns-cancel{background:#a9a9a9;}
+.cui-roller-btns .cui-btns-sure{background:#ff9913;}
+
+
+/* --------------------------
+   全局 您还没有记录哦等提示信息
+   -------------------------- */
+.cui-load-error{width:100%;margin:auto;word-break:break-all;text-align:center;margin-top:60px;}
+.cui-wifi{width:68px;height:69px;position:relative;margin:0 auto 5px auto;background-position:0 -110.5px;}
+.cui-exclam:before,.cui-exclam:after{position:absolute;content:"";}
+.cui-exclam:before{width:10px;height:31px;top:12px;left:50%;margin-left:-5px;background:#626262;border-radius:5px;}
+.cui-exclam:after{width:10px;height:10px;bottom:11px;left:50%;margin-left:-5px;background:#626262;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
+
+
+
+/* --------------------------
+   网络不给力，请稍后再试试吧
+   -------------------------- */
+.cui-load-fail{width:60%;margin:78px auto;}
+.cui-fail-icon:before{width:50px;height:42px;left:50%;top:50%;margin:-19px 0 0 -25px;background-position:-154px -162px;}
+.cui-btns-retry{display:inline-block;margin:10px auto;background:#ff9913;padding:10px 55px;color:#fff;}
+.cui-glines{border-bottom:#dfdfdf 1px solid;margin:40px auto 26px auto;}
+.cui-btns-tel{min-width:100px;display:inline-block;margin:10px auto;background:#a9a9a9;padding:10px 0 10px 15px;color:#fff;}
+.cui-btns-tel .icon_phone:before{top:0;left:-52px;right:auto;}
+
+.cui-breaking-load{width:80px;height:70px;border-radius: 5px;background:rgba(0,0,0,.7);margin:auto;position:relative;z-index:9999;}
+
+
+/* --------------------------
+   loading 加载及动画
+   -------------------------- */
+.cui-w-loading {position:absolute;width:48px;height:48px;left:50%;top:50%;margin:-24px 0 0 -24px;  background-position:-98px -163px;}
+.cui-white-logo{position:absolute; width:24px;height:28px;left:50%;top:50%; z-index:9;margin:-15px 0 0 -12px;background-position:-152px -132px;}
+
+.cui-w-loading{
+    -webkit-animation:cui-loading 1.58s linear infinite;
+    -moz-animation:cui-loading 1.58s linear infinite;
+    -ms-animation:cui-loading 1.58s linear infinite;
+    animation:cui-loading 1.58s linear infinite;
+    -webkit-transform-origin:50% 49%;
+    -moz-transform-origin:50% 49%;
+    -ms-transform-origin:50% 49%;
+    transform-origin:50% 49%;
+    opacity:0;
+}
+.cui-b-loading{
+    -webkit-animation:cui-loading 1.58s linear infinite;
+    -moz-animation:cui-loading 1.58s linear infinite;
+    -ms-animation:cui-loading 1.58s linear infinite;
+    animation:cui-loading 1.58s linear infinite;
+    -webkit-transform-origin:48% 45%;
+    -moz-transform-origin:48% 45%;
+    -ms-transform-origin:48% 45%;
+    transform-origin:48% 45%;
+    opacity:0;
+}
+@-webkit-keyframes cui-loading{
+    0%{
+        opacity:1;
+        -webkit-transform:rotate(0deg);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:rotate(360deg);
+    }
+}
+@-moz-keyframes cui-loading{
+    0%{
+        opacity:1;
+        -moz-transform:rotate(0deg);
+    }
+    100%{
+        opacity:1;
+        -moz-transform:rotate(360deg);
+    }
+}
+@-ms-keyframes cui-loading{
+    0%{
+        opacity:1;
+        -ms-transform:rotate(0deg);
+    }
+    100%{
+        opacity:1;
+        -ms-transform:rotate(360deg);
+    }
+}
+@keyframes cui-loading{
+    0%{
+        opacity:1;
+        transform:rotate(0deg);
+    }
+    100%{
+        opacity:1;
+        transform:rotate(360deg);
+    }
+}
+
+
+/* --------------------------
+   增量加载
+   -------------------------- */
+.cui-zl-load{width:110px;margin:5px auto;position:relative;}
+.cui-zl-load p{padding-left:25px;color:#878787;}
+.cui-b-loading{width:20px;height:20px;position:absolute;background-position:-201px -134px;}
+.cui-blue-logo:before{width:12px;height:12px;left:4px;top:4px;background-position:-185.5px -133px;}
+.cui-img-default{width:60px;height:60px;line-height:60px;text-align:center;margin:auto;background:#7a7a7a;color:#fff;}
+
+
+/* --------------------------
+   费用说明Content
+   -------------------------- */
+.cui-money-tips{padding:15px 10px 10px;position:relative;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:auto;}
+.cui-money-tips li{color:black;}
+.cui-money-tips i{color:#686868;font-size:16px;}
+.cui-money-tips em{width:auto;float:right;}
+.cui-money-tips dfn{font-size:12px;margin:0 2px 0 4px;}
+.cui-money-tips p{color:#a7a9ac;}
+.cui-money-tips p span{width:75%;display:inline-block;}
+.cui-money-tips .border_bot{border-bottom:#dfdfdf 1px solid;padding-bottom:5px;margin-bottom:5px;color:#686868;}
+.cui-money-tips .t_r{text-align:right;padding-top:5px;}
+.cui-money-tips .t_r b{font-size:16px;color:#ff9913;}
+
+/* --------------------------
+   全局默认图片
+   -------------------------- */
+.cui-item-img{background:#7a7a7a;text-align:center;position:relative;}
+.cui-item-img .cui-item-imgbg{width:60px;height:12px;position:absolute;left:50%;top:50%;margin:-6px 0 0 -30px;}
+
+
+/* --------------------------
+   无更多结果
+   -------------------------- */
+.nomore{ height:40px; line-height:40px; text-align:center; color:#999;}
+
+
+/* --------------------------
+   发送验证码 海豚+发送中...
+   -------------------------- */
+.cui-grayload-text{ position:absolute;  left:50%; top:50%; margin:-50px 0 0 -75px; width:150px;font-size:16px;  text-align:center; background:rgba(0,0,0,.7); color:#fff;border-radius:5px;z-index:99;}
+.cui-grayload-close{width:42px;height:42px;float:right;}
+.cui-grayload-close:before,.cui-grayload-close:after{position:absolute; content:"" ; width:15px; height:2px;  top:15px;right:10px;background:#fff; -webkit-transform: rotate(45deg);-moz-transform: rotate(45deg); -ms-transform: rotate(45deg);transform: rotate(45deg);}
+.cui-grayload-close:after{ -webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg);transform: rotate(-45deg);}
+.cui-grayload-text .cui-w-loading{top:10px;margin-top:0;}
+.cui-grayload-text .cui-white-logo{top:20px;margin-top:0;}
+.cui-grayload-bfont{margin:70px 0 6px;}
+
+
+/* --------------------------
+   Switch
+   -------------------------- */
+.cui-switch { position: relative;top: 6px;width: 51px;height: 31px;border-radius: 31px;background-color: #ccc;cursor: pointer;-webkit-transition: 200ms background-color ease-in;-moz-transition: 200ms background-color ease-in;transition: 200ms background-color ease-in;}
+.cui-switch.current { background-color: #099fde;}
+/*switch bg*/
+.cui-switch .cui-switch-bg { position: absolute;top: 2px;left: 2px;width: 47px;height: 27px;border-radius: 27px;background-color: #ccc;-webkit-transform: scale(1,1);-moz-transform: scale(1,1);transform: scale(1,1);transform-origin: center center;-webkit-transition: 200ms -webkit-transform ease-in;-moz-transition: 200ms -moz-transform ease-in;transition: 200ms transform ease-in;}
+.cui-switch .cui-switch-bg.current { width: 47px;height: 27px;-webkit-transform: scale(0,0);-moz-transform: scale(0,0);transform: scale(0,0);}
+/*switch circle*/
+.cui-switch .cui-switch-scroll { position: absolute;top: 2px;left: 2px;right: 22px;height: 27px;border-radius: 27px;background-color: #fff;box-shadow: 0 2px 3px rgba(0,0,0,0.5);-webkit-transition: 200ms width ease-in, 200ms left ease-in, 200ms right ease-in;-moz-transition: 200ms width ease-in, 200ms left ease-in, 200ms right ease-in;transition: 200ms width ease-in, 200ms left ease-in, 200ms right ease-in;}
+.cui-switch.current .cui-switch-scroll { left: 22px;right: 2px;}
+.cui-switch .cui-switch-scroll.wide { left: 2px;right: 14px;}
+.cui-switch.current .cui-switch-scroll.wide { left: 14px;right: 2px;}
+
+/* ---------------------------------------------------
+   checkbox add  by pp 2014/2/13
+   --------------------------------------------------- */
+.checkbox-input-c{ display:none; margin:0; padding:0; }
+.checkbox-input-c + i{ position:relative; display:inline-block; width:20px; height:20px; vertical-align:middle; background: #e8e8e8; border:1px solid #e8e8e8; }
+.checkbox-input-c + i:before, .checkbox-input-c + i:after{position:absolute; content:""; top:9px; left:1px; width:8px; height:4px; background:#fff;-webkit-transform:rotate(45deg); -moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
+.checkbox-input-c + i:after{top:7px; left:4px; width:16px; -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg); }
+.checkbox-input-c:checked + i{ background: #15a4d5; border:1px solid #15a4d5;}/*blue底色*/
+.checkbox-input-s{ display:none; margin:0; padding:0;}
+.checkbox-input-s + i{display:inline-block; width:15px; height:15px;vertical-align:middle;  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAABGCAMAAADsM9QKAAAAh1BMVEUAAADIyMjIyMgJn97IyMiUvM/IyMgJn94Jn97IyMhBqdnIyMgJn97IyMjIyMgJn97IyMjIyMjIyMjIyMgJn94Jn97IyMjIyMgJn97IyMgJn94Jn97IyMgJn97IyMgJn94Jn94Jn94Jn97IyMjIyMjIyMgJn94Jn97IyMjIyMgJn94Jn97IyMg4XcAPAAAAK3RSTlMAvmyzmAHlgI+DB0dEN+9OL1IP+G/uP7tZ1d2YXzWjzqhhFSV5kCW7x9+Uh2fcQQAAAYtJREFUSMft0/t2ojAQx/GfKCxEFEEu9d710trNvP/z7QzbmLXJvEBPv39x8hEzHALwu7PRtgeA1SrlBmWLji9+RSpxfrUdrN0hWsX/UDLnMTQ71gMUftuOqnBpuRIKt6IVTJTTXLSFmXp+S52aV9EdsLOO09a+nz91KnoyvIPjVG7oDl7tGZg+GC9WalP5oRvas/Pp+Y+VcjyzuG9rAv7fDwgZldMcIXvvTIS9v0BhlKynVGXxEhqLn6CyZAJWztq7sHpSc55SP+dSxax/JRV++obVG4p3HZWUsh71Hh9Es2sRliC90RpER0RbZEQ18yyqBRH1UPhyZ51D4T5jraHwnrg9FL6KFsB8/2DzPJQ8TrMsHBf3hdOZ6EeDZkLJP24GXkmcShegJ8crkmaG9UZurPmDsVgTd7+M+8rKEztfHkfNmi8sO/nmCBirpdMjQva+biLs9pe1kP39GxNh7zVUxoKWUFm8DvimnLVPHhqkLuBxkYw84WGHSdAgL3EFrNakVYDrhyzaJkmBv59YbTThs9ZeAAAAAElFTkSuQmCC") no-repeat 0 -21px; background-size:15px 35px; }
+.checkbox-input-s:checked + i{ background-position: 0 0; }/*小blue对勾*/

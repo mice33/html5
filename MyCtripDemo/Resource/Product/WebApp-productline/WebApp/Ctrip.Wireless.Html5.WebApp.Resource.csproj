@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C28F912-B51F-425A-87C4-21B65DBC1453}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ctrip.Wireless.Html5.WebApp.CPage</RootNamespace>
+    <AssemblyName>Ctrip.Wireless.Html5.WebApp.CPage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfigProfile.xml" />
+    <Content Include="dest\libs\backbone.custom.js" />
+    <Content Include="dest\libs\backbone.js" />
+    <Content Include="dest\libs\bridge.js" />
+    <Content Include="dest\libs\console.js" />
+    <Content Include="dest\libs\fastclick.js" />
+    <Content Include="dest\libs\include.ga.js" />
+    <Content Include="dest\libs\include.libs.js" />
+    <Content Include="dest\libs\include.ubt.js" />
+    <Content Include="dest\libs\jquery.js" />
+    <Content Include="dest\libs\json2.js" />
+    <Content Include="dest\libs\libs.js" />
+    <Content Include="dest\libs\libs_r.js" />
+    <Content Include="dest\libs\require.js" />
+    <Content Include="dest\libs\require.min.js" />
+    <Content Include="dest\libs\require.text.js" />
+    <Content Include="dest\libs\sockjs-0.3.min.js" />
+    <Content Include="dest\libs\underscore.js" />
+    <Content Include="dest\libs\zepto.js" />
+    <Content Include="dest\style\main.css" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\blank.png" />
+    <Content Include="images\circle.png" />
+    <Content Include="images\ctrip.png" />
+    <Content Include="images\cvv2.png" />
+    <Content Include="images\html5-banner_640X100.png" />
+    <Content Include="images\icons-18-white.png" />
+    <Content Include="images\icon_select.png" />
+    <Content Include="images\icon_ticket.png" />
+    <Content Include="images\img-loading.gif" />
+    <Content Include="images\itrip.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\ocbg.png" />
+    <Content Include="images\return.png" />
+    <Content Include="images\roomPic.png" />
+    <Content Include="images\ticket_bg.png" />
+    <Content Include="images\tuan_bg.png" />
+    <Content Include="img\ajax-loader.gif" />
+    <Content Include="img\app\comm_bg.png" />
+    <Content Include="img\app\roomPic.png" />
+    <Content Include="img\bg_banner.png" />
+    <Content Include="img\bg_banner2.png" />
+    <Content Include="img\car2.png" />
+    <Content Include="img\car\bar.jpg" />
+    <Content Include="img\comm_bg.png" />
+    <Content Include="img\error\error.png" />
+    <Content Include="img\error\error404.png" />
+    <Content Include="img\error\error500.png" />
+    <Content Include="img\error\errorleft.png" />
+    <Content Include="img\error\errormiddle.png" />
+    <Content Include="img\error\errorright.png" />
+    <Content Include="img\hotelintl_bg.png" />
+    <Content Include="img\hyb_detail.png" />
+    <Content Include="img\icon_hotel_room.png" />
+    <Content Include="img\icon_weixin.png" />
+    <Content Include="img\index_newIcon.png" />
+    <Content Include="img\logo\1004.png" />
+    <Content Include="img\logo\1024.png" />
+    <Content Include="img\logo\114.png" />
+    <Content Include="img\logo\120.png" />
+    <Content Include="img\logo\144.png" />
+    <Content Include="img\logo\152.png" />
+    <Content Include="img\logo\57.png" />
+    <Content Include="img\logo\640.png" />
+    <Content Include="img\logo\72.png" />
+    <Content Include="img\logo\76.png" />
+    <Content Include="img\logo\940.png" />
+    <Content Include="img\logo_114.png" />
+    <Content Include="img\logo_57.png" />
+    <Content Include="img\logo_new1.png" />
+    <Content Include="img\map_address.png" />
+    <Content Include="img\myctrip_bg1.png" />
+    <Content Include="img\pay_i.png" />
+    <Content Include="img\pic_flightslogo.png" />
+    <Content Include="img\roomPic.png" />
+    <Content Include="img\send_load.png" />
+    <Content Include="img\sex.png" />
+    <Content Include="img\star.png" />
+    <Content Include="img\startImg.png" />
+    <Content Include="img\star_hover.png" />
+    <Content Include="img\style1\credit_bg.png" />
+    <Content Include="img\style1\v2_bgs.png" />
+    <Content Include="img\trigon_icon.png" />
+    <Content Include="img\weather\cloud.png" />
+    <Content Include="img\weather\cloudy.png" />
+    <Content Include="img\weather\fog.png" />
+    <Content Include="img\weather\heavyRain.png" />
+    <Content Include="img\weather\hotelintl_bg.png" />
+    <Content Include="img\weather\lightRain.png" />
+    <Content Include="img\weather\shower.png" />
+    <Content Include="img\weather\sleet.png" />
+    <Content Include="img\weather\snow.png" />
+    <Content Include="img\weather\snowtosun.png" />
+    <Content Include="img\weather\storm.png" />
+    <Content Include="img\weather\sunny.png" />
+    <Content Include="img\weather\thundershower.png" />
+    <Content Include="img\weather\wind.png" />
+    <Content Include="libs\backbone.custom.js" />
+    <Content Include="libs\backbone.js" />
+    <Content Include="libs\bridge.js" />
+    <Content Include="libs\console.js" />
+    <Content Include="libs\fastclick.js" />
+    <Content Include="libs\include.ga.js" />
+    <Content Include="libs\include.libs.js" />
+    <Content Include="libs\include.ubt.js" />
+    <Content Include="libs\jquery.js" />
+    <Content Include="libs\json2.js" />
+    <Content Include="libs\libs.js" />
+    <Content Include="libs\libs_r.js" />
+    <Content Include="libs\require.js" />
+    <Content Include="libs\require.min.js" />
+    <Content Include="libs\require.text.js" />
+    <Content Include="libs\sockjs-0.3.min.js" />
+    <Content Include="libs\underscore.js" />
+    <Content Include="libs\zepto.js" />
+    <Content Include="style\car.css" />
+    <Content Include="style\common.css" />
+    <Content Include="style\cpage.css" />
+    <Content Include="style\creditcard.css" />
+    <Content Include="style\cui.css" />
+    <Content Include="style\flight.css" />
+    <Content Include="style\flightinternational.css" />
+    <Content Include="style\flights_logo.css" />
+    <Content Include="style\global.css" />
+    <Content Include="style\hotel.css" />
+    <Content Include="style\hotelintl.css" />
+    <Content Include="style\ie_hack.css" />
+    <Content Include="style\main2.css" />
+    <Content Include="style\main2_r.css" />
+    <Content Include="style\myctrip.css" />
+    <Content Include="style\ticket.css" />
+    <Content Include="style\train.css" />
+    <Content Include="style\tuan.css" />
+    <Content Include="style\vacations.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gruntCfg.json" />
+    <None Include="img\comm_bg.psd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2075</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>C:\DevTools\ConfigGen\ConfigGen.exe -gd "$(ProjectDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

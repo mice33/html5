@@ -1,0 +1,37 @@
+{
+  "requirejs": {
+    "main": {
+      "options": {
+        "baseUrl": "<%= config.srcDir %>",
+        "paths":   {
+          "$":    "libs/zepto",
+          "_":    "libs/underscore",
+          "B":    "libs/backbone",
+          "F":    "libs/fastclick",
+          "libs": "libs/libs_r"
+        },
+        "web":     {
+          "include": [
+            "$",
+            "_",
+            "B",
+            "F",
+            "libs"
+          ],
+          "out":     "<%= config.destDir %>/libs/libs.js"
+        },
+        "app":{
+          "include": [
+            "$",
+            "_",
+            "B",
+            "F",
+            "libs"
+          ],
+          "out":     "<%= config.destDir %>/libs/libs.js"
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,377 @@
+﻿.vslider_list {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.vslider_li {
+    width: 100%;
+}
+
+.vslider_li img {
+    display: block;
+    width: 100%;
+}
+
+.vslider_tit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: #000;
+    opacity: 0.7;
+}
+
+.vslider_tit span {
+    margin: 0 10px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.vct_cont {
+    padding: 10px;
+}
+
+.vct_tit {
+    text-align: center;
+    font: normal 14px/2 a;
+}
+
+.vct_tit1 {
+    text-align: center;
+    font: normal 12px/2 a;
+    color: #2eb3f9;
+}
+
+.vct_txtbox {
+    font: normal 12px/1.8 a;
+    color: #666;
+}
+
+.vct_whitebox {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+}
+
+/*.vct_whitebox:last-child{margin-bottom:60px;}*/
+.vct_greyli {
+    margin-bottom: 10px;
+    padding: 0 5px;
+    line-height: 40px;
+    background: #f5f5f5;
+}
+
+.vct_whitebox .vct_greyli:last-child {
+    margin: 0;
+}
+
+.vct_lir {
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+    color: #999;
+}
+
+/*------vacations byzuo star------*/
+/*List*/
+.vacat_fsize {
+    font: 600 0.9em/40px STXihei "";
+}
+
+.vacat_list li {
+    border-bottom: #dfdfdf 1px solid;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.vacat_list li .vacat_i {
+    float: left;
+    position: relative;
+    background: url(../img/roomPic.png?v2.2) #f5f5f5 center center no-repeat;
+    background-size: 67px 50px;
+}
+
+.vacat_list li .vacat_i p {
+    width: 100%;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    font-size: .8em;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+}
+
+.vacat_list li .vacat_i img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.vacat_list li hgroup {
+    padding: 0 10px 0 70px;
+    position: relative;
+}
+
+.vacat_list li hgroup h4 {
+    width: 60%;
+    font-size: 12px;
+    color: #999;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.vacat_list li hgroup h5 {
+    position: absolute;
+    right: 10px;
+    font-size: 1.2em;
+    color: #999;
+}
+
+.vacat_list li hgroup h5 strong {
+    color: #ff8c00;
+    font-size: 1.2em;
+}
+
+.vacat_list li hgroup h5 dfn {
+    font-size: .7em;
+    padding-right: 3px;
+}
+
+.vacat_airline li {
+    padding: 10px;
+    font-weight: 700;
+    position: relative;
+}
+
+.vacat_airline li.current {
+    background-color: #ebf2fa;
+}
+
+.vacat_filter {
+    padding: 0;
+}
+
+.vacat_filter li {
+    padding: 2px 34px 0 10px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #E4E4E4;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.vacat_filter li span {
+    float: right;
+    color: #2EB3F9;
+}
+
+.vacat_list li hgroup .valmoney {
+    color: #F0831E;
+    font-size: 12px;
+}
+
+/*------vacations byzuo end------*/
+
+/*------add by w_jing------*/
+.txtindent20 {
+    text-indent: 20px;
+}
+
+.info_title {
+    height: auto;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.info_content {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 10px 10px;
+    color: #797979;
+}
+
+.dpscore {
+    background-color: #F7F7F7;
+    height: 39px;
+    line-height: 39px;
+    color: #0090F3;
+    margin: 0 10px;
+    text-indent: 10px;
+}
+
+.dpscore strong {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.dpbox {
+    background-color: #fff;
+    padding: 10px;
+    margin: 1px 10px 0;
+}
+
+.dpbox li:last-child {
+    margin-top: 10px;
+}
+
+.dpbox i {
+    color: #34C1FA;
+    margin: 0 5px 10px 0;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.dpbox i.invalid {
+    color: #E9E9E9;
+}
+
+.dpbox em {
+    float: right;
+    color: #848484;
+}
+
+.vct_greyli p {
+    margin-top: -20px;
+    color: #797979;
+}
+
+.mxzinfo {
+    margin: 70px 10px 0;
+}
+
+.mxzinfo p {
+    color: #797979;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.explainbox {
+    width: 221px;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.explainbox h2 {
+    text-align: center;
+}
+
+.explainbox p {
+    color: #585858;
+}
+
+.explainbox em {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+
+.explainbox i {
+    width: 23px;
+    height: 23px;
+    line-height: 20px;
+    background-color: #1491c5;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.oc_r {
+    margin-right: -20px;
+}
+/*add by pp 保险*/
+.link_r
+{
+    position:relative;
+    display:block;
+    line-height:30px;
+    vertical-align:middle;
+    padding-right:25px;
+    text-align:right; 
+}
+.link_m
+{
+    margin:15px;
+    text-align:center; 
+}
+.link_m a{
+    position:relative; 
+    display:inline-block;
+    width:auto; 
+    margin:auto;
+    padding-right:20px;
+ }
+ 
+.list_st_border{
+    margin-bottom:10px;
+}
+.list_st_border li
+{
+    overflow:hidden;
+    padding:10px; 
+    line-height:22px;
+}
+.llong_list .fl{
+    width:68%;
+ }
+ .llong_list .fr{
+    width:32%;
+    text-align:right;
+    margin:0;
+    padding-left:10px;
+    box-sizing:border-box;
+ }
+.llong_list li:first-child {
+    line-height: 1.4em;
+    background:#f8f8f8;
+}
+.p_cont{padding:0 15px; color:#949494}
+ 
+ /*add by w 1205 自由行订单详情*/
+.zzline{ position:relative; top:12px;display:inline-block; width:20%; border-top:1px dashed #C8C8C8;height: 1px;overflow:hidden; margin:10px 0 15px;}
+.zztxt{ color:#949494; padding:0 7px;}
+.zzair2{ text-indent:40px; padding-bottom:10px; color:#686868;}
+.subblist li {position: relative;padding: 10px;line-height: 20px;overflow: hidden;background: #fff;color: #343434;}
+.icon_txt {position: absolute;top: 50%;right: 22px;height: 20px;margin-top: -10px;padding: 0 5px;background: #FFCB87;color: #fff;}
+.subblist span{display:inline-block; width:55%; padding-left:50px;}
+.roomlist span{padding-left:30px; width:75%;}
+.roomlist li{color:#686868; font-size:15px; padding:0 10px;}
+.roomlist i{position: absolute;top: 50%;right: 10px;height: 20px;margin-top: -10px;color:#262626;}
+.roomlist time{ margin-left:15px; color:#262626;}
+.bxuse{ border-top:1px solid #cfcfcf;}
+.bxusetime{ color:#949494; margin-top:5px;}
+.bxusetime span{ color:#686868; margin-right:10px;}
+.bxusetime i{ position:absolute; right:25px;}
+.poplist_tit{background:#f2f2f2;}
+.shortline{ border-bottom:1px solid #cfcfcf; margin-left:40px;}
+.size16{ font-size:16px;}
+.pb5{ padding-bottom:5px !important;}
+dt i,.subb_address:before,.subb_phone:before{position:relative;top:3px;width:16px; height:15px;display:inline-block;background:url(../img/hyb_detail.png) no-repeat; background-size:112px 61px;  }
+.icon_foward{ background-position:0px -23px;}
+.icon_back{background-position:0 -40px;}
+.icon_hotel{background-position:-44px 0px;}
+.icon_safe{background-position:-22px -2px;}
+.subb_address,.subb_phone{ position:absolute; left:40px;}
+.subb_address:before,.subb_phone:before{ content:""; background-position:-24px -44px;}
+.subb_phone:before{ background-position:-43px -44px;}
+
+

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuickStart", "QuickStart", "{6A36ED51-3B59-40D2-91E9-5ECD02C31D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld", "helloworld\helloworld.csproj", "{B2DE3293-4204-4994-BE13-279A00349DF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2DE3293-4204-4994-BE13-279A00349DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DE3293-4204-4994-BE13-279A00349DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DE3293-4204-4994-BE13-279A00349DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DE3293-4204-4994-BE13-279A00349DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2DE3293-4204-4994-BE13-279A00349DF1} = {6A36ED51-3B59-40D2-91E9-5ECD02C31D15}
+	EndGlobalSection
+EndGlobal
