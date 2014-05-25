@@ -1,6 +1,6 @@
 ﻿"use strict"
 define(['libs', 'cBasePageView'], function (libs, BasePageView) {
-  var viewhtml = '<h1>Hello World</h1><div><button>点击我去list</button></div>';
+  var viewhtml = '<h1>Hello World</h1><div><button>点击我去list</button></div><br><div id="eventHandler">事件与模板</div>';
   var View = BasePageView.extend({
     onCreate: function () {
       this.$el.html(viewhtml);
@@ -38,11 +38,15 @@ define(['libs', 'cBasePageView'], function (libs, BasePageView) {
     onHide: function () {
     },
     events:{
-      'click button':'GoTo'
+      'click button':'GoTo',
+      'click #eventHandler':'EventTemplateHandler'
     },
     GoTo:function(){
       this.forward('list');
     },
+    EventTemplateHandler:function(){
+      this.forward('eventBinding');
+    }
   });
   return View;
 });
