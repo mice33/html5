@@ -11,10 +11,9 @@ define(['libs','cBasePageView','cModel','cBase',buildViewTemplatesPath('index.ht
                     "AddressSelectorId": 0,
                     "LineType": 1,
                     "Start": 1,
-                    "ReturnCount": 20,
-                    "head":null,
-                    "auth":""
+                    "ReturnCount": 20
                 };
+                //this.usehead = false;
 		  },
 		  initialize: function ($super, options) {
 		    $super(options);
@@ -26,7 +25,7 @@ define(['libs','cBasePageView','cModel','cBase',buildViewTemplatesPath('index.ht
 
 		var View = BasePageView.extend({
 		onCreate: function () {
-	      this.$el.html(viewhtml);
+	      //this.$el.html(viewhtml);
 	      this.injectHeaderView();
 	    },
 	    onLoad: function () {
@@ -50,8 +49,9 @@ define(['libs','cBasePageView','cModel','cBase',buildViewTemplatesPath('index.ht
 	      this.headerview.show();
 
 	      var success = function(data) {
-	      	alert(data);
+	      	//alert(data);
 		    console.log(data);
+		    this.render(data);
 		  };
 		 
 		  var error = function(e){
@@ -66,6 +66,11 @@ define(['libs','cBasePageView','cModel','cBase',buildViewTemplatesPath('index.ht
 
 	      //...
 	      this.turning();
+	    },
+	    render:function(data){
+	    	var templateFn = _.template(viewhtml);
+	    	var viewhtmldom = templateFn(data);
+	    	this.$el.html(viewhtmldom);
 	    }
 	});
 	return View;
