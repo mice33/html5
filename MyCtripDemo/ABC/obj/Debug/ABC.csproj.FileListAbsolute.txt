@@ -1,0 +1,5 @@
+E:\GitHub\HTML5\MyCtripDemo\ABC\bin\Debug\ABC.exe.config
+E:\GitHub\HTML5\MyCtripDemo\ABC\bin\Debug\ABC.exe
+E:\GitHub\HTML5\MyCtripDemo\ABC\bin\Debug\ABC.pdb
+E:\GitHub\HTML5\MyCtripDemo\ABC\obj\Debug\ABC.exe
+E:\GitHub\HTML5\MyCtripDemo\ABC\obj\Debug\ABC.pdb

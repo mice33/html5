@@ -59,7 +59,9 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="main.js" />
-    <Content Include="view\index.js" />
+    <Content Include="views\eventBinding.js" />
+    <Content Include="views\index.js" />
+    <Content Include="views\list.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
