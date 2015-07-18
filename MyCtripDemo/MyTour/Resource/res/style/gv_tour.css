@@ -1,0 +1,355 @@
+﻿@charset 'utf-8';
+
+body, .body {
+    background-color: #f5f5f5 !important;
+}
+
+.noneTouch {
+    -ms-touch-action: none;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flash {
+    0%,50%,100% {
+        opacity: 1;
+    }
+
+    25%,75% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    0%,50%,100% {
+        opacity: 1;
+    }
+
+    25%,75% {
+        opacity: 0;
+    }
+}
+
+.cui-update {
+    text-align: center;
+    color: #666;
+    display: none;
+}
+
+.limited_sale_pro .sale_img img[src], .package_tour_pro .img_box img[src] {
+    -webkit-animation: opacity-fade-in 350ms ease-in-out;
+    -moz-animation: opacity-fade-in 350ms ease-in-out;
+    -ms-animation: opacity-fade-in 350ms ease-in-out;
+    animation: opacity-fade-in 350ms ease-in-out;
+}
+
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+}
+
+.icon_active {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+}
+
+.index_navi_active {
+    background: #eee;
+}
+
+.home_active::before {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+}
+
+.com_scale_active {
+    display: block;
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+}
+
+.com_btn_active {
+    background-color: #fcb457 !important;
+}
+
+.com_btn2_active {
+    background-color: #40acd5 !important;
+}
+
+.com_list_active {
+    background-color: #f5f5f5 !important;
+}
+
+.book_now_double .book_now_btn, .book_now a {
+    background-color: #ff7d13;
+}
+
+.v_traffic .v_tiaffic_l {
+    overflow: visible;
+}
+
+.slide_img {
+    background-image: url(http://pic.c-ctrip.com/h5/group_travel/tourassistant.png);
+    background-size: 180px 117px;
+}
+
+.live_consult {
+    background-image: url(http://pic.c-ctrip.com/h5/group_travel/livechat.png);
+    background-size: 180px 117px;
+}
+
+.base_loading i {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    -webkit-animation: forward_loading 1.58s linear infinite;
+    -moz-animation: forward_loading 1.58s linear infinite;
+    -ms-animation: forward_loading 1.58s linear infinite;
+    animation: forward_loading 1.58s linear infinite;
+    transform-origin: 64% 40%;
+    -webkit-transform-origin: 64% 40%;
+    -moz-transform-origin: 64% 40%;
+    -ms-transform-origin: 64% 40%;
+    background: url(http://pic.c-ctrip.com/h5/group_travel/cui_img_new_big.png) -175px 0;
+    background-size: 200px 130px;
+}
+
+.loading_ico {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    -webkit-animation: forward_loading 1.58s linear infinite;
+    -moz-animation: forward_loading 1.58s linear infinite;
+    -ms-animation: forward_loading 1.58s linear infinite;
+    animation: forward_loading 1.58s linear infinite;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    background: url(http://pic.c-ctrip.com/h5/group_travel/loading_orange.png) 0 0;
+    background-size: 25px 25px;
+}
+
+.extra_service_mod .extra_select .js_resource_open {
+    font-size: 14px;
+    padding: 10px 15px 12px 0;
+}
+
+.poupup_confim_cont {
+    padding-top: 5px;
+}
+
+.extra_select .js_hanle_area {
+    top: 35px;
+}
+
+.cui-pop-box-tour .cui-hd {
+    color: #333;
+    background: #fff;
+    height: auto;
+    line-height: 1.5;
+    padding: 8px 30px 10px 10px;
+}
+
+    .cui-pop-box-tour .cui-hd .cui-top-close:before, .cui-pop-box .cui-hd .cui-top-close:after {
+        background: #999;
+        width: 2px;
+        height: 16px;
+    }
+
+.cui-pop-box-tour .cui-roller-btns {
+    border: 0;
+}
+
+.popup_confim .v_order_item_mod {
+    margin-top: 0;
+}
+
+.js-pop-price-detail {
+    border-top: 2px solid #ccc;
+}
+
+.cui-pop-box-tour .poupup_confim {
+    border-top: 1px solid #ccc;
+}
+
+.cruises_tour_booking .price_ship {
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.cruises_tour_booking .traveller_select_mod {
+    margin-top: 0;
+}
+
+.cruises_tour_booking .calendar_none_color, #js-calendar-Cruise-init td {
+    background: #f5f5f5;
+}
+
+.cui-pop-box-tour .total_price {
+    margin: 0 10px;
+    font-size: 18px;
+    border-top: 2px solid #ccc;
+    padding: 10px 15px;
+    text-align: right;
+    color: #000;
+}
+
+.js_bargain_scroll li:last-child {
+    border: 0;
+}
+
+.contrast_col .js_no_switch_top:after {
+    top: -100px;
+}
+
+.foot_order_info .loading_ico, .mod_order_info .loading_ico {
+    width: 25px;
+    height: 25px;
+    background-position: 0 0;
+}
+
+.top_search_tab_col, .tpye_tab {
+    left: 0;
+}
+
+.caidan_egg_success {
+    background: #fff url(http://pic.c-ctrip.com/h5/group_travel/bargain_success.png) no-repeat right bottom;
+    background-size: 105px auto;
+}
+
+.v_list_hd {
+    font-weight: 700;
+}
+
+.contact_title {
+    font-weight: 700;
+}
+
+.js_wrap {
+    text-align: center;
+}
+
+    .js_wrap li {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .js_wrap li img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+.confirm_cancel_color {
+    color: #000 !important;
+}
+
+.detail_slide_tab_4iphone {
+    top: 44px;
+}
+
+.calendar_ft .status {
+    padding-left: 5px;
+}
+
+.tour_list .tour_img {
+    background: #eef3f5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVRIia2W23LaQAyGpT16sQEDaTrp+z9ap5NMDrheY+95ewEkgA1Jp9UVluTP2l+7WvBN7+B/G/vrN1KwPgEAMiHoP0KT63532viYP3yEyXldz8VlLn5h+cm2zWvn02QQef2wrv6u0mS2L+0u5HMvEZITjNaEnP3QQXVOHVeavLND7yPlM5HabWdHFVLBCeGKyzhsdwGQMkZIUS2XikxUmob2uRn8oazhmi4pAwk+CpoyAECOwUfwbVuoWl5CTfO0tfGmGHvL3gdKs9anqjCp5Pvvd+/QR5SzlYJe95+yc4wBAJksOBJkoixK/rG/PqBqvVEAAECNsXG61SeGlIuyLMsZH2/Wcfd7PW7NJZDX39cVuRofRbSxeSrxDErodeIEVFs/mUeFFMdcZELd/OgF1LmJFhFVf3u4q9VeKiLq9ewm81LTlC71RLnYbGYk9VvtgDC1uluom2sfQ0fG1aYiAEBmqx+j+lLfPDY2AavuNvXJWLn9UZSzOQHw3a6fCrf7M4w5unDqv4AKdrbrmCwBwLUuFlNQQRGAzhQx7evPX6+Nm4aSip94EBkAgI8Rr66ICXT7aRH6zkxCgVfyQ+acIwAAQcxT5yG5mAFyzu/p05UC8KoUeHyIzgIAYgzdmOn0EIBxDMddSKm4AgUyX5fHTia7swBFQcNu686yYv/8ZiKRKttjgMpyap4eseVd7R4blwCS6Ron64XUL7+f+XLFfGdiDM64iKxYiKj7gzAo1JIfAFfvqNQ3T42NAEDE6n7F9OvzLiATShWlQGfMMFj3rjSRq/u6JJ9B92t8edEmAiArlwsV9ZueuP6QqfX5Mfv8No2DftPGhgRIGGc0eXuY+Ei5rObVvLicqF+5oveWvAsp+sEmKqVgVE5M54N9/R8K4UIACHl76gEAwB9C8Ed9b0cjkwAAAABJRU5ErkJggg==) no-repeat center center;
+}
+
+    .tour_list .tour_img img {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+.fade-in-list {
+    -webkit-animation: opacity-fade-in 550ms ease-in-out;
+    animation: opacity-fade-in 550ms ease-in-out;
+}
+
+@-webkit-keyframes opacity-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tourism_festival_t, .tourism_festival_b {
+    padding: 8px 2px;
+}
+
+.confim_mod .v_mod_hd {
+    font-weight: 700;
+}
+
+.js_overflow_body {
+    overflow: hidden;
+}
+
+.js_overflow_detail {
+    height: auto;
+    overflow: hidden;
+}
+
+.minus {
+    color: #f90;
+    font: 400 20px/20px "Microsoft YaHei";
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: -2px;
+}
+
+.js_resource_bgColor {
+    background-color: #c0c7ce !important;
+}
+
+.order_todo_item {
+    padding: 0;
+}
+
+.order_todo_item_visa {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0 0;
+}
+
+    .order_todo_item_visa:last-child {
+        border-bottom: 0;
+    }
+
+.order_todo_item_progress {
+    padding-bottom: 10px;
+}
+
+#invoice .mod_about_invoice .item::after {
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
