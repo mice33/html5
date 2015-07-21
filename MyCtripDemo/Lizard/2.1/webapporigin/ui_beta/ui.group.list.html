@@ -1,0 +1,19 @@
+﻿<%filter = filter.replace(/\s+/g, "").split(','); %>
+<div class="cm-group-list">
+<%for(var i = 0, len = data.length; i < len; i++) { %>
+  <div data-groupindex="<%=i %>" class="cm-group-item <%if(_.isUndefined(data[i].needFold) || data[i].needFold === false) { %>expanded<%}%> ">
+    <div class="cm-group-hd js_group">
+    <%=data[i].name %></div>
+    <%var item = data[i].data; %>
+    <%if(item && item.length > 0) { %>
+      <div class="cm-group-bd">
+        <ul class="cm-radio-list js_items">
+          <%for(var j = 0, len1 = item.length; j < len1; j++) { %>
+          <li data-index="<%=j %>" data-group="<%=i %>" data-filter="<%for(var k in filter){ var v = filter[k]; if(typeof item[j][v]=='string') { %><%=item[j][v] %> <% } %><% } %>" ><%=item[j].name %> </li>
+          <% } %>
+        </ul>
+      </div>
+    <% } %>
+  </div>
+<% } %>
+</div>

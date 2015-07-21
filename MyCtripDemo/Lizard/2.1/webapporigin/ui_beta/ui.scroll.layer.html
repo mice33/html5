@@ -1,0 +1,21 @@
+﻿<section class="cm-modal js_wrapper">
+  <%if(typeof title == 'string' && title.length > 0){ %>
+  <header class="cm-modal-hd js_header">
+    <h3 class="cm-modal-title js_title">
+      <%=title %></h3>
+    <i class="icon-close js_close"></i>
+  </header>
+  <%} %>
+  <div class="cm-modal-bd js_body" style="overflow: hidden; position: relative;">
+  </div>
+  <footer class="cm-modal-ft cm-actions js_footer">
+    <%if(typeof btns == 'string'){ %>
+    <%=btns %>
+    <% } else { %>
+    <% for(var i = 0, len = btns.length; i < len; i++ ) {%>
+    <span class="cm-actions-btn <%=btns[i].className%>">
+      <%=btns[i].name%></span>
+    <% } %>
+    <%} %>
+  </footer>
+</section>

@@ -1,0 +1,11 @@
+﻿<%
+var hasText = (typeof content == 'string' && content.length > 0);
+%>
+
+<section class="cm-loading  <%if(closeBtn){ %> cm-loading--close<% } %>">
+  <span class="icon-loading"><i class="icon-loading-circle"></i></span>
+  <%if(closeBtn){ %><i class="icon-close js_close"></i><% } %>
+  <%if(hasText){ %><p class="cm-loading-text">
+    <%=content %></p>
+  <% } %>
+</section>

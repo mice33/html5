@@ -1,0 +1,58 @@
+﻿
+<div class="cm-calendar">
+
+  <ul class="cm-calendar-hd js_weekend">
+    <% var i = 0, day1 = 0;  %>
+    <%for(day1 = 0; day1 < 7; day1++) { %>
+    <li><%=weekDayArr[day1] %></li>
+    <%} %>
+  </ul>
+<%for(var j = 0; j < displayMonthNum; j++) { %>
+<%
+  var changedMonth = month + j;
+  var yyy =  parseInt(( month + j ) / 12);
+  if(changedMonth > 11) { 
+    changedMonth = changedMonth - 12 * yyy;
+  }
+  changedYear = year + yyy;
+  var d = new Date(changedYear, changedMonth);
+  var days = _.dateUtil.getDaysOfMonth(d);
+  var beginWeek = _.dateUtil.getBeginDayOfMouth(d);
+  var endDateTime = endDate.getTime();
+
+  var str_month = MonthClapFn(changedYear, changedMonth);
+%>
+  <ul class="cm-calendar-bd ">
+    <%if(str_month.length > 0 ) { %>
+      <h3 class="cm-month js_month"><%=str_month %></h3>
+    <% } %>
+    <ul class="cm-day-list">
+      <% for(i = 0; i < beginWeek; i++) { %>
+        <li class="cm-item--disabled js_empty_day"></li>
+      <% } %>
+      <% for(i = 0; i < days; i++) { %>
+        <% var day = i + 1; %>
+        <% var dateObj = new Date(changedYear, changedMonth, day ); %>
+        <% var calendar_time = dateObj.getTime(); %>
+        <% var difftime = calendar_time -curTime; %>
+        <% var _difftime =  -1 * difftime; %>
+        <% var diffHour =  parseInt(_difftime / 3600000 * 100) / 100; %>
+        <% var _diffHour =  parseInt((startTime.getTime() - calendar_time) / 36000) / 100; %>
+
+        
+        <%if(typeof dayWrapperItemFn != 'undefined' && _.isFunction(dayWrapperItemFn)){ %>
+          <%=dayWrapperItemFn(scope, changedYear, changedMonth, day, dateObj, difftime) %>
+        <%} else { %>
+        <li  data-curTime="<%=diffHour %>" class="js_calendar_item <%if(_diffHour >= 24 || (endTime && calendar_time > endTime.getTime() )) { %> js_overdue_day cm-item--disabled <%} %> " data-cndate="<%=changedYear%>-<%=changedMonth + 1%>-<%=day%>" data-date="<%=changedYear%>-<%=changedMonth%>-<%=day%>">
+          <%=dayItemFn.call(scope, changedYear, changedMonth, day, dateObj, difftime)%>
+        </li>
+        <%} %>
+
+      <% } %>
+    </ul>
+
+  </ul>
+  <%} %>
+</div>
+
+

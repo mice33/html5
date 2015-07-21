@@ -1,0 +1,17 @@
+﻿
+<div class="cm-page-fail">
+  <div class="cm-fail-redo">
+    <i class="icon-offline"></i>
+    <p class="cm-fail-info js_fail_txt">
+     <%=loadFail %></p>
+    <span class="cm-fail-redo-btn js_retry_btn"><%=tryAgain %></span>
+  </div>
+   <%if(showContact) { %>
+  <div class="cm-fail-service">
+    <p class="cm-fail-info js_tel_txt">
+      <%=telText %></p>
+    <span class="cm-fail-service-btn js_contact"><%=contact %></span>
+  </div>
+  <% } %>
+
+</div>
