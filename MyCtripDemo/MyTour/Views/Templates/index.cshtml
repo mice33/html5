@@ -1,3 +1,94 @@
-﻿
+﻿<div class="body nofoot">
+    @*<div class="top_box index_search">
+        <div class="search_col">
+            <div class="starting" id="ctm_tour_index_depart"><span id="g_depart"></span></div>
+            <div class="search_mod g_dest" id="ctm_tour_index_dest">目的地/关键字</div>
+            <div class="micro_phone" id="ctm_tour_index_micro_phone" style="display:none;"></div>
+        </div>
+        <p class="motifline hot_motif_text" style="height:42px;">
+        </p>
+    </div>
+    <!--高级搜索入口 -->
+    <div id="ctm_tour_index_advance_search" class="index_more_search advance_search_entry" style="display:none;"><span>更多搜索</span>时间、预算、人数、出游方式...</div>
+    <!--我的跟团游 -->
+    <div id="ctm_tour_index_my_tour" class="my_package_tour my_tour_entry" style="display:none;"><span>我的跟团游</span>筛选历史/浏览历史</div>
+    <div class="home_abtest_base_loading base_loading" style="padding:6px 0"><i></i>加载中</div>
+    <!--广告 -->
+    <div class="tourism_festival_banner js_ads_broadcasting" id="ctm_tour_index_ads" style="overflow:hidden;">
 
-<h2>这里是视图</h2>
+    </div>
+    <table class="motiflist motif_list">
+        <tbody>
+            <tr class="showrow">
+                <td id="ctm_tour_index_zhoubian" data-py="周边" data-pt="zhoubian" class="zhoubian"><i class="motif_rim" data-destleft=1 data-name="周边"></i>周边</td>
+                <td id="ctm_tour_index_guonei" data-py="国内" data-pt="guonei"><i class="motif_inland" data-destleft=2 data-name="国内"></i>国内</td>
+                <td id="ctm_tour_index_gangaotai" data-py="港澳台" data-pt="gangaotai"><i class="motif_hktw" data-destleft=3 data-name="港澳台"></i>港澳台</td>
+                <td id="ctm_tour_index_rihanchaomeng" data-py="日韩朝蒙" data-pt="rihanchaomeng"><i class="motif_jsk" data-destleft=4 data-name="日韩朝蒙"></i>日韩朝蒙</td>
+            </tr>
+            <tr class="motiflist_more_1 motiflist_more_tr" style="display:none">
+                <td class="motif_pop" colspan="4">
+                    <div class="sub_motif_list submotifline">
+                    </div>
+                    <div class="home_dest_base_loading base_loading"><i></i>加载中</div>
+                </td>
+            </tr>
+            <tr class="showrow">
+                <td id="ctm_tour_index_dongnanya" data-py="东南亚" data-pt="dongnanya"><i class="motif_asia" data-destleft=5 data-name="东南亚"></i>东南亚</td>
+                <td id="ctm_tour_index_ouzhou" data-py="欧洲" data-pt="ouzhou"><i class="motif_europe" data-destleft=6 data-name="欧洲"></i>欧洲</td>
+                <td id="ctm_tour_index_meizhou" data-py="美洲" data-pt="meizhou"><i class="motif_america" data-destleft=7 data-name="美洲"></i>美洲</td>
+                <td id="ctm_tour_index_aozhongdongfei" data-py="澳中东非" data-pt="aozhongdongfei"><i class="motif_australia" data-destleft=8 data-name="澳中东非"></i>澳中东非</td>
+            </tr>
+            <tr class="motiflist_more_2 motiflist_more_tr" style="display:none">
+                <td class="motif_pop" colspan="4">
+                    <div class="sub_motif_list submotifline">
+                    </div>
+                    <div class="home_dest_base_loading base_loading"><i></i>加载中</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--特卖 Start-->
+    <div class="banners_wrapper">
+    </div>
+    <div class="index_banner_loading base_loading" style="margin-bottom: -10px;"><i></i>加载中</div>
+    <div class="limited_sale_pro border1px_linear_gradient">
+        <ul id="ctm_tour_index_deals_products" class="basefix best_product_deals" style="display:none"></ul>
+        <div class="index_sale_base_loading base_loading" style="margin-bottom: -10px;"><i></i>加载中</div>
+    </div>
+    <!--特卖 End-->*@
+    <!-- 出境国内周边跟团游S -->
+    <div class="package_tour_pro border1px_linear_gradient">
+        <div id="ctm_tour_index_external" class="package_tour_title border1px_scaley recommend_to_list" data-name="出境"><strong class="leave_country">出境跟团游</strong><em>更多</em></div>
+        <ul id="ctm_tour_index_external_products" class="basefix best_product_chujing recommend_list_wrapper"></ul>
+        <div class="index_recommend_base_loading base_loading"><i></i>加载中</div>
+    </div>
+
+    <div class="package_tour_pro border1px_linear_gradient">
+        <div id="ctm_tour_index_internal" class="package_tour_title border1px_scaley recommend_to_list" data-name="国内"><strong class="inland">国内跟团游</strong><em>更多</em></div>
+        <ul id="ctm_tour_index_internal_products" class="basefix best_product_guonei recommend_list_wrapper"></ul>
+        <div class="index_recommend_base_loading base_loading"><i></i>加载中</div>
+    </div>
+
+    <div class="package_tour_pro border1px_linear_gradient best_product_zhoubian_wrapper">
+        <div id="ctm_tour_index_ambitus" class="package_tour_title border1px_scaley recommend_to_list" data-name="周边"><strong class="ambitus">周边跟团游</strong><em>更多</em></div>
+        <ul id="ctm_tour_index_ambitus_products" class="basefix best_product_zhoubian recommend_list_wrapper"></ul>
+        <div class="index_recommend_base_loading base_loading"><i></i>加载中</div>
+    </div>
+    <!-- 出境国内周边跟团游E -->
+    @*<!-- 领队入口=s -->
+    <div class="travel_leader tourleader" id="ctm_tour_index_leader"><span>携程领队</span>带您开启全新旅程</div>
+    <!-- 六重保障 =s -->
+    <dl class="six_security">
+        <dt></dt>
+        <dd>透明团</dd>
+        <dd>特殊原因退订保障</dd>
+        <dd>自然灾害保障金</dd>
+        <dd>旅游预警机制</dd>
+        <dd>应急援助体系</dd>
+        <dd>一站式旅游保险</dd>
+    </dl>
+    <!-- 六重保障 =s -->
+    <a id="leader_entry" href="/webapp/tourleader/index.html" class="guider_entry hidden"></a>
+    <a id="ctm_tour_index_microshop" href="/webapp/vshop/index?isshare=1" class="my_weidian weidian_entry hidden"></a>*@
+</div>
