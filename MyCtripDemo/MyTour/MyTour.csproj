@@ -138,6 +138,8 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Resource\controllers\index.js" />
+    <Content Include="Resource\res\scripts\common\tourCommon.js" />
+    <Content Include="Resource\res\scripts\utils\util.js" />
     <Content Include="Resource\res\style\detail_v6_6.css" />
     <Content Include="Resource\res\style\gv_tour.css" />
     <Content Include="Resource\res\style\process_v6_6.css" />
