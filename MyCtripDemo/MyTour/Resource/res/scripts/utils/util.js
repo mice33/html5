@@ -563,7 +563,8 @@ define(['cUtilHybrid','TourStore'], function (cUtilHybrid,TourStore) {
             return isNaN(pre) || [0, 1, 2, 4].indexOf(pre) < 0 ? 3 : pre;
         }
         if (host.match(/m\.fat/i) || host.match(/^(localhost|10\.32)/i) || host.match(/^(192\.168\.253\.1)/i)) { //0测试
-            return 0;
+            //return 0;
+            return 3;
         } else if (host.match(/^(10\.8)/i)) { //堡垒
             return 1;
         } else if (host.match(/^m\.uat/i)) { //uat
