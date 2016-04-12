@@ -1,6 +1,0 @@
-E:\GitHub\HTML5\MyCtripDemo\helloworld\bin\helloworld.dll.config
-E:\GitHub\HTML5\MyCtripDemo\helloworld\bin\helloworld.dll
-E:\GitHub\HTML5\MyCtripDemo\helloworld\bin\helloworld.pdb
-E:\GitHub\HTML5\MyCtripDemo\helloworld\obj\Debug\helloworld.csprojResolveAssemblyReference.cache
-E:\GitHub\HTML5\MyCtripDemo\helloworld\obj\Debug\helloworld.dll
-E:\GitHub\HTML5\MyCtripDemo\helloworld\obj\Debug\helloworld.pdb
